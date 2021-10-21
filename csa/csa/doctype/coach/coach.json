@@ -1,0 +1,192 @@
+{
+ "actions": [],
+ "autoname": "CO.####",
+ "creation": "2021-07-28 19:46:39.342301",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "user_name",
+  "first_name",
+  "last_name",
+  "proflle_photo",
+  "date_of_birth",
+  "mobile_number",
+  "gender",
+  "section_break_6",
+  "email_id",
+  "membership_id",
+  "national_identify_number",
+  "union",
+  "geo_political",
+  "province",
+  "section_break_12",
+  "region",
+  "race",
+  "coach_level",
+  "coach_position",
+  "is_certified",
+  "document_upload",
+  "document_type",
+  "document_expiry_date",
+  "active"
+ ],
+ "fields": [
+  {
+   "fieldname": "user_name",
+   "fieldtype": "Data",
+   "label": "User Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "proflle_photo",
+   "fieldtype": "Attach Image",
+   "label": "Proflle Photo"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date Of Birth"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "\nMale\nFemale\nOthers"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email Id"
+  },
+  {
+   "fieldname": "membership_id",
+   "fieldtype": "Data",
+   "label": "Membership Id",
+   "read_only": 1
+  },
+  {
+   "fieldname": "national_identify_number",
+   "fieldtype": "Data",
+   "label": "National Identify Number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "union",
+   "fieldtype": "Select",
+   "label": "Union",
+   "options": "\nBoland\nBorder\nCGL\nEP\nEasterns\nFree State\nKei\nKZN Coastal\nKZN Inland\nLimpopo\nMpumalanga\nNorthern Cape\nNorth West\nNorthers\nSWD\nWP"
+  },
+  {
+   "fieldname": "geo_political",
+   "fieldtype": "Select",
+   "label": "Geo Political",
+   "options": "\nWestern Cape\nEastern Cape\nNorthern Cape\nNorth West\nFree State\nKwaZulu-Natal\nGauteng\nLimpopo\nMpumalanga"
+  },
+  {
+   "fieldname": "province",
+   "fieldtype": "Select",
+   "label": "Province",
+   "options": "\ntest data"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Select",
+   "label": "Region",
+   "options": "\ntest data"
+  },
+  {
+   "fieldname": "race",
+   "fieldtype": "Select",
+   "label": "Race",
+   "options": "\nAfrican\nColoured\nIndian\nWhite"
+  },
+  {
+   "fieldname": "coach_level",
+   "fieldtype": "Select",
+   "label": "Coach Level",
+   "options": "\nMini Cricket\nLevel 1\nLevel 2\nLevel 3\nLevel 4\nMentor/Master Coaches"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_certified",
+   "fieldtype": "Check",
+   "label": "Is Certified"
+  },
+  {
+   "fieldname": "document_upload",
+   "fieldtype": "Attach",
+   "label": "Document Upload"
+  },
+  {
+   "fieldname": "document_type",
+   "fieldtype": "Select",
+   "label": "Document Type",
+   "options": "\nneed data"
+  },
+  {
+   "fieldname": "document_expiry_date",
+   "fieldtype": "Date",
+   "label": "Document Expiry Date "
+  },
+  {
+   "fieldname": "active",
+   "fieldtype": "Select",
+   "label": "Active",
+   "options": "active\ntest data"
+  },
+  {
+   "fieldname": "coach_position",
+   "fieldtype": "Select",
+   "label": "Coach Position",
+   "options": "\nHead Coach\nBowling Coach\nBatting Coach\nWicket keeping Coach\nFielding Coach\nTrainer\nPhysio\nAnalyst"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-07-28 20:13:34.063578",
+ "modified_by": "Administrator",
+ "module": "Csa",
+ "name": "Coach",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

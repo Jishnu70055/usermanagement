@@ -1,0 +1,193 @@
+{
+ "actions": [],
+ "autoname": "VN.####",
+ "creation": "2021-07-29 14:07:49.247079",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "venue_name",
+  "description",
+  "profile_photo",
+  "venue_website",
+  "date_opened",
+  "date_registered_with_csa",
+  "venue_type",
+  "city",
+  "country",
+  "address",
+  "city_local",
+  "province",
+  "geo_tag",
+  "column_break_14",
+  "dimensions",
+  "crowd_capacity",
+  "lights",
+  "changing_rooms",
+  "number_of_practice_nets",
+  "type_of_nets",
+  "parking_capacity",
+  "distance_from_nearest_airport",
+  "distance_from_nearest_train_station",
+  "distance_from_nearest_bus_stop"
+ ],
+ "fields": [
+  {
+   "fieldname": "venue_name",
+   "fieldtype": "Data",
+   "label": "Venue Name"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "profile_photo",
+   "fieldtype": "Attach Image",
+   "label": "Profile Photo"
+  },
+  {
+   "fieldname": "venue_website",
+   "fieldtype": "Data",
+   "label": "Venue Website"
+  },
+  {
+   "fieldname": "date_opened",
+   "fieldtype": "Date",
+   "label": "Date Opened"
+  },
+  {
+   "fieldname": "date_registered_with_csa",
+   "fieldtype": "Date",
+   "label": "Date Registered with CSA"
+  },
+  {
+   "fieldname": "venue_type",
+   "fieldtype": "Select",
+   "label": "Venue Type ",
+   "options": "\nLocal\nForeign"
+  },
+  {
+   "depends_on": "eval:doc.venue_type==\"Foreign\"",
+   "fieldname": "city",
+   "fieldtype": "Select",
+   "label": "City",
+   "options": "\nneed data"
+  },
+  {
+   "depends_on": "eval:doc.venue_type==\"Foreign\"",
+   "fieldname": "country",
+   "fieldtype": "Select",
+   "label": "Country",
+   "options": "\nneed data"
+  },
+  {
+   "depends_on": "eval:doc.venue_type==\"Local\"",
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "depends_on": "eval:doc.venue_type==\"Local\"",
+   "fieldname": "city_local",
+   "fieldtype": "Select",
+   "label": "City",
+   "options": "\nneed data"
+  },
+  {
+   "depends_on": "eval:doc.venue_type==\"Local\"",
+   "fieldname": "province",
+   "fieldtype": "Select",
+   "label": "Province",
+   "options": "\nneed data"
+  },
+  {
+   "depends_on": "eval:doc.venue_type==\"Local\"",
+   "fieldname": "geo_tag",
+   "fieldtype": "Data",
+   "label": "Geo Tag"
+  },
+  {
+   "fieldname": "dimensions",
+   "fieldtype": "Data",
+   "label": "Dimensions"
+  },
+  {
+   "fieldname": "crowd_capacity",
+   "fieldtype": "Data",
+   "label": "Crowd Capacity"
+  },
+  {
+   "default": "0",
+   "fieldname": "lights",
+   "fieldtype": "Check",
+   "label": "Lights"
+  },
+  {
+   "default": "0",
+   "fieldname": "changing_rooms",
+   "fieldtype": "Check",
+   "label": "Changing Rooms"
+  },
+  {
+   "fieldname": "number_of_practice_nets",
+   "fieldtype": "Data",
+   "label": "Number Of Practice Nets"
+  },
+  {
+   "fieldname": "type_of_nets",
+   "fieldtype": "Select",
+   "label": "Type Of Nets",
+   "options": "Artificial turf\nconcrete\ngrass"
+  },
+  {
+   "fieldname": "parking_capacity",
+   "fieldtype": "Data",
+   "label": "Parking Capacity"
+  },
+  {
+   "fieldname": "distance_from_nearest_airport",
+   "fieldtype": "Data",
+   "label": "Distance From Nearest Airport"
+  },
+  {
+   "fieldname": "distance_from_nearest_train_station",
+   "fieldtype": "Data",
+   "label": "Distance From Nearest Train Station"
+  },
+  {
+   "fieldname": "distance_from_nearest_bus_stop",
+   "fieldtype": "Data",
+   "label": "Distance From Nearest Bus Stop"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-07-29 14:16:28.493279",
+ "modified_by": "Administrator",
+ "module": "Csa",
+ "name": "Venue",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

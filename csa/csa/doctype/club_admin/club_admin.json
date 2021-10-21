@@ -1,0 +1,123 @@
+{
+ "actions": [],
+ "autoname": "CLA.####",
+ "creation": "2021-07-28 18:49:28.564559",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "email_id",
+  "union_name",
+  "profile_photo",
+  "incorporation_date",
+  "union_membership_id",
+  "geo_political",
+  "land_line_number",
+  "column_break_8",
+  "union_hq_address",
+  "manager_address",
+  "manager_email_id",
+  "muncipality",
+  "settlement_type",
+  "active"
+ ],
+ "fields": [
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email ID"
+  },
+  {
+   "fieldname": "union_name",
+   "fieldtype": "Data",
+   "label": "Club Name"
+  },
+  {
+   "fieldname": "profile_photo",
+   "fieldtype": "Attach Image",
+   "label": "Profile Photo"
+  },
+  {
+   "fieldname": "incorporation_date",
+   "fieldtype": "Date",
+   "label": "Incorporation Date"
+  },
+  {
+   "fieldname": "union_membership_id",
+   "fieldtype": "Data",
+   "label": "Club Membership ID"
+  },
+  {
+   "fieldname": "geo_political",
+   "fieldtype": "Select",
+   "label": "Geo Political",
+   "options": "\nWestern Cape\nEastern Cape\nNorthern Cape\nNorth West\nFree State\nKwaZulu-Natal\nGauteng\nLimpopo\nMpumalanga"
+  },
+  {
+   "fieldname": "land_line_number",
+   "fieldtype": "Data",
+   "label": "Land Line Number"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "union_hq_address",
+   "fieldtype": "Small Text",
+   "label": "Club HQ Address"
+  },
+  {
+   "fieldname": "manager_address",
+   "fieldtype": "Small Text",
+   "label": "Manager Address"
+  },
+  {
+   "fieldname": "manager_email_id",
+   "fieldtype": "Data",
+   "label": "Manager Email ID"
+  },
+  {
+   "fieldname": "muncipality",
+   "fieldtype": "Select",
+   "label": "Muncipality",
+   "options": "\nNeeded Data"
+  },
+  {
+   "fieldname": "settlement_type",
+   "fieldtype": "Select",
+   "label": "Settlement Type",
+   "options": "\nNeed Data"
+  },
+  {
+   "fieldname": "active",
+   "fieldtype": "Select",
+   "label": "Active",
+   "options": "\nActive"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-07-29 14:18:48.338821",
+ "modified_by": "Administrator",
+ "module": "Csa",
+ "name": "Club Admin",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,211 @@
+{
+ "actions": [],
+ "autoname": "PL.####",
+ "creation": "2021-07-28 20:10:50.901505",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "user_name",
+  "first_name",
+  "last_name",
+  "proflle_photo",
+  "date_of_birth",
+  "mobile_number",
+  "gender",
+  "membership_id",
+  "player_type",
+  "national_identify_number",
+  "union",
+  "geo_political",
+  "province",
+  "section_break_12",
+  "region",
+  "race",
+  "city",
+  "country",
+  "bat_hand",
+  "bat_role",
+  "bowl_hand",
+  "bowl_role",
+  "bowling_action",
+  "disability",
+  "active"
+ ],
+ "fields": [
+  {
+   "fieldname": "user_name",
+   "fieldtype": "Data",
+   "label": "User Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "proflle_photo",
+   "fieldtype": "Attach Image",
+   "label": "Proflle Photo"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date Of Birth"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "\nMale\nFemale\nOthers"
+  },
+  {
+   "fieldname": "membership_id",
+   "fieldtype": "Data",
+   "label": "Membership Id",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.player_type==\"Local\"",
+   "fieldname": "national_identify_number",
+   "fieldtype": "Data",
+   "label": "National Identify Number",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.player_type==\"Local\"",
+   "fieldname": "union",
+   "fieldtype": "Select",
+   "label": "Union",
+   "options": "\nBoland\nBorder\nCGL\nEP\nEasterns\nFree State\nKei\nKZN Coastal\nKZN Inland\nLimpopo\nMpumalanga\nNorthern Cape\nNorth West\nNorthers\nSWD\nWP"
+  },
+  {
+   "depends_on": "eval:doc.player_type==\"Local\"",
+   "fieldname": "geo_political",
+   "fieldtype": "Select",
+   "label": "Geo Political",
+   "options": "\nWestern Cape\nEastern Cape\nNorthern Cape\nNorth West\nFree State\nKwaZulu-Natal\nGauteng\nLimpopo\nMpumalanga"
+  },
+  {
+   "depends_on": "eval:doc.player_type==\"Local\"",
+   "fieldname": "province",
+   "fieldtype": "Select",
+   "label": "Province",
+   "options": "\ntest data"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.player_type==\"Local\"",
+   "fieldname": "region",
+   "fieldtype": "Select",
+   "label": "Region",
+   "options": "\ntest data"
+  },
+  {
+   "depends_on": "eval:doc.player_type==\"Local\"",
+   "fieldname": "race",
+   "fieldtype": "Select",
+   "label": "Race",
+   "options": "\nAfrican\nColoured\nIndian\nWhite"
+  },
+  {
+   "depends_on": "eval:doc.player_type==\"Foreign\"",
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "depends_on": "eval:doc.player_type==\"Foreign\"",
+   "fieldname": "country",
+   "fieldtype": "Select",
+   "label": "Country",
+   "options": "\nCountry list"
+  },
+  {
+   "fieldname": "bat_hand",
+   "fieldtype": "Select",
+   "label": "Bat Hand",
+   "options": "\nLeft Hand\nRight Hand"
+  },
+  {
+   "fieldname": "bat_role",
+   "fieldtype": "Select",
+   "label": "Bat Role",
+   "options": "\nBatting All-rounder\nBowling All-rounder\nUpper-order batsman\nMiddle-order batsman\nLower-order batsman\nWK Batsman"
+  },
+  {
+   "fieldname": "bowl_hand",
+   "fieldtype": "Select",
+   "label": "Bowl Hand",
+   "options": "\nLeft Hand\nRight Hand"
+  },
+  {
+   "fieldname": "bowl_role",
+   "fieldtype": "Select",
+   "label": "Bowl Role",
+   "options": "\nFast bowler\nMedium-pace bowler\nFinger Spinner\nWrist Spinner\nPart-time\nWK\nNon-bowler"
+  },
+  {
+   "fieldname": "bowling_action",
+   "fieldtype": "Select",
+   "label": "Bowling Action",
+   "options": "\nneeded data"
+  },
+  {
+   "fieldname": "disability",
+   "fieldtype": "Select",
+   "label": "Disability",
+   "options": "\nneeded data"
+  },
+  {
+   "fieldname": "active",
+   "fieldtype": "Select",
+   "label": "Active",
+   "options": "active\ntest data"
+  },
+  {
+   "fieldname": "player_type",
+   "fieldtype": "Select",
+   "label": "Player Type",
+   "options": "\nForeign\nLocal"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-07-29 12:37:03.603679",
+ "modified_by": "Administrator",
+ "module": "Csa",
+ "name": "Players",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

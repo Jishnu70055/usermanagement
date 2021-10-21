@@ -1,0 +1,130 @@
+{
+ "actions": [],
+ "autoname": "VO.####",
+ "creation": "2021-07-28 19:33:19.631331",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "email_id",
+  "venue_name",
+  "responsible_for_own_facility",
+  "venue_membership_id",
+  "latitude",
+  "longitude",
+  "geo_political",
+  "land_line_number",
+  "venue_address",
+  "column_break_8",
+  "manager_address",
+  "manager_email_id",
+  "muncipality",
+  "settlement_type",
+  "active"
+ ],
+ "fields": [
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email Id"
+  },
+  {
+   "fieldname": "venue_name",
+   "fieldtype": "Data",
+   "label": "Venue Name"
+  },
+  {
+   "default": "0",
+   "fieldname": "responsible_for_own_facility",
+   "fieldtype": "Check",
+   "label": "Responsible For Own Facility"
+  },
+  {
+   "fieldname": "venue_membership_id",
+   "fieldtype": "Data",
+   "label": "Venue Membership ID"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Data",
+   "label": "Latitude"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Data",
+   "label": "Longitude"
+  },
+  {
+   "fieldname": "geo_political",
+   "fieldtype": "Select",
+   "label": "Geo Political",
+   "options": "\nWestern Cape\nEastern Cape\nNorthern Cape\nNorth West\nFree State\nKwaZulu-Natal\nGauteng\nLimpopo\nMpumalanga"
+  },
+  {
+   "fieldname": "land_line_number",
+   "fieldtype": "Data",
+   "label": "Land Line Number"
+  },
+  {
+   "fieldname": "venue_address",
+   "fieldtype": "Small Text",
+   "label": "Venue Address"
+  },
+  {
+   "fieldname": "manager_address",
+   "fieldtype": "Small Text",
+   "label": "Manager address"
+  },
+  {
+   "fieldname": "manager_email_id",
+   "fieldtype": "Data",
+   "label": "Manager Email ID"
+  },
+  {
+   "fieldname": "muncipality",
+   "fieldtype": "Select",
+   "label": "Muncipality",
+   "options": "\nneed data"
+  },
+  {
+   "fieldname": "settlement_type",
+   "fieldtype": "Select",
+   "label": "Settlement Type",
+   "options": "\nneed data"
+  },
+  {
+   "fieldname": "active",
+   "fieldtype": "Select",
+   "label": "Active",
+   "options": "\nActive"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-07-29 14:19:46.635473",
+ "modified_by": "Administrator",
+ "module": "Csa",
+ "name": "Venue Owners",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,157 @@
+{
+ "actions": [],
+ "autoname": "TM,####",
+ "creation": "2021-07-28 20:43:18.549762",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "team_name",
+  "team_description",
+  "column_break_3",
+  "team_logo",
+  "social_handles_section",
+  "facebook",
+  "twitter",
+  "instagram",
+  "section_break_8",
+  "team_type",
+  "date_started",
+  "date_registered_with_csa",
+  "column_break_12",
+  "team_location",
+  "city",
+  "country",
+  "address",
+  "city_local",
+  "province"
+ ],
+ "fields": [
+  {
+   "fieldname": "team_name",
+   "fieldtype": "Data",
+   "label": "Team Name"
+  },
+  {
+   "fieldname": "team_description",
+   "fieldtype": "Small Text",
+   "label": "Team Description"
+  },
+  {
+   "fieldname": "team_logo",
+   "fieldtype": "Attach Image",
+   "label": "Team Logo"
+  },
+  {
+   "fieldname": "social_handles_section",
+   "fieldtype": "Section Break",
+   "label": "Social Handles"
+  },
+  {
+   "fieldname": "facebook",
+   "fieldtype": "Data",
+   "label": "Facebook"
+  },
+  {
+   "fieldname": "twitter",
+   "fieldtype": "Data",
+   "label": "Twitter"
+  },
+  {
+   "fieldname": "instagram",
+   "fieldtype": "Data",
+   "label": "Instagram"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "team_type",
+   "fieldtype": "Select",
+   "label": "Team Type",
+   "options": "\nnational\nprovincial\nacademy\nfranchise\nschool"
+  },
+  {
+   "fieldname": "date_started",
+   "fieldtype": "Date",
+   "label": "Date Started"
+  },
+  {
+   "fieldname": "date_registered_with_csa",
+   "fieldtype": "Date",
+   "label": "Date Registered With CSA"
+  },
+  {
+   "fieldname": "team_location",
+   "fieldtype": "Select",
+   "label": "Team Location",
+   "options": "\nForeign Team\nLocal Team"
+  },
+  {
+   "depends_on": "eval:doc.team_location==\"Foreign Team\"",
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "depends_on": "eval:doc.team_location==\"Foreign Team\"",
+   "fieldname": "country",
+   "fieldtype": "Select",
+   "label": "Country",
+   "options": "\nselect country"
+  },
+  {
+   "depends_on": "eval:doc.team_location==\"Local Team\"",
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "depends_on": "eval:doc.team_location==\"Local Team\"",
+   "fieldname": "city_local",
+   "fieldtype": "Select",
+   "label": "City",
+   "options": "\nneed data"
+  },
+  {
+   "depends_on": "eval:doc.team_location==\"Local Team\"",
+   "fieldname": "province",
+   "fieldtype": "Select",
+   "label": "Province",
+   "options": "\nneed data"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-07-29 13:56:51.565807",
+ "modified_by": "Administrator",
+ "module": "Csa",
+ "name": "Team",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
